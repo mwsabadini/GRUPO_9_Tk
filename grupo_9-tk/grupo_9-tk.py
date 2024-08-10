@@ -35,11 +35,11 @@ root.geometry("800x500")
 root.configure(bg="lightgreen")  # Color verde claro para la ventana principal
 
 # armado del menú desplegable
-menu_bar = Menu(root, bg="lightgreen", fg="violet")
+menu_bar = Menu(root, bg="lightgreen", fg="brown")
 root.config(menu=menu_bar)
 
-menu_navegacion = Menu(menu_bar, tearoff=0, bg="light blue", fg="blue",
-                       activebackground="yellow", activeforeground="red")
+menu_navegacion = Menu(menu_bar, tearoff=0, bg="yellow", fg="black",
+                       activebackground="white", activeforeground="black")
 menu_bar.add_cascade(label="Navegar", menu=menu_navegacion, background="lightblue")  # Fondo celeste para "Navegar"
 menu_navegacion.add_command(label="Sección 1", command=mostrar_seccion1)
 menu_navegacion.add_command(label="Sección 2", command=mostrar_seccion2)
